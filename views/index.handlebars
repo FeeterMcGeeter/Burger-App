@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row title">
+        <h1>Eat Da Burger!</h1>
+        <img src="/public/assets/img/logo.png" alt="Burger Logo">
+        <h2>Edition!</h2>
+    </div>
+
+    <div class="row">
+        <div class="col s6">
+            <h3>Burgers to be devoured</h3>
+            <ul>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <li>
+                    <span class="burger-name">{{this.burger_name}}</span>
+                    // ended here
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-burger">
+        <input type="text" id="addBurger" name="burger">
+    </div>
+
+    <div class="submit-button">
+        <button type="submit">Add Burger</button>
+    </div>
+
+    <div class="instructions">
+        <p>Enter a burger or sandwich you'd like to eat and press the "Submit" button to submit it.</p>
+    </div>
+</div>

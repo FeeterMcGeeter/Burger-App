@@ -1,5 +1,6 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Blue Cheese Burger', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Buffalo Chicken Sandwich', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Monte Cristo', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Juicy Lucy', false);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Impossible Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Summer Thyme Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Yes I Cayenne Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Sweet Home Avocado Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Poblano Picasso Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Kales From the Crypt Burger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Tarragon in Sixty Seconds Burger', false);
