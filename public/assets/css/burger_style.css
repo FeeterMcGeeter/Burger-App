@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/assets/img/background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.4;
+}
+
+/* ===== TITLE HEADER ===== */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FA1F19;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.title h1 {
+    margin-bottom: 0;
+    font-size: 75px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.title img {
+    width: 400px;
+    height: 200px;
+}
+
+.title h2 {
+    margin-top: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* ===== NON DEVOURED SECTION ===== */
+#notDevoured {
+    padding-left: 20px;
+}
+
+#notDevoured h4 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #FA1F19;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#notDevoured ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#notDevoured li {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    color: #FCEC04;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+#devourBurger {
+    margin-left: 20px;
+    cursor: pointer;
+    background: #FA1F19;
+    color: #fff;
+    border-color: #000;
+}
+
+#devourBurger:hover {
+    background: #FCEC04;
+    color: #000;
+}
+
+/* ===== DEVOURED SECTION ===== */
+#devoured h4 {
+    font-family: 'Luckiest Guy', cursive;   
+    color: #FA1F19;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000; 
+}
+
+/* ===== ADD BURGER SECTION ===== */
+.create-burger {
+    padding: 0 0 20px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.create-burger h4 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: #FA1F19;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.addNewBurger {
+    color: #000;
+    font-size: 18px;
+}
+
+#burgerName {
+    margin-bottom: 20px;
+}
+
+#burgerButton {
+    padding: 10px;
+    cursor: pointer;
+    background: #FCEC04;
+    color: #000;
+    border-color: #000;
+    font-weight: bold;
+}
+
+#burgerButton:hover {
+    background: #FA1F19;
+    color: #fff;
+    font-weight: bold;
+}
