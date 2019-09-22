@@ -1,31 +1,27 @@
-$(document).ready(function() {
-    $(".devoured").on("click", function(event) {
+$(document).ready(function () {
+    $(".devoured").on("click", function (event) {
+        event.preventDefault();
         var id = $(this).data("id");
-        var devoured = $(this).data("newEat");
-        var devouredBurger = {
-            devoured: devoured
-        };
-
-        $.ajax("/api/burgers/" + id, {
-            type: "PUT",
-            data: devouredBurger
-        }).then(function() {
-            console.log("changed state to ", devoured);
+        // console.log(id);
+        $.ajax({url: "/api/burgers/" + id, method: "PUT"})
+            
+        .then(function (data) {
+            console.log(data);
             location.reload();
         });
     });
 
-    $(".add-burger").on("submit", function(event) {
+    $(".add-burger").on("click", function (event) {
         event.preventDefault();
 
         var newBurger = {
-            name: $("#burgerName").val()
+            name: $("#burgerName").val().trim()
         };
 
         $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
-        }).then(function() {
+        }).then(function () {
             console.log("Burger Added");
             location.reload();
         })

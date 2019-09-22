@@ -73,29 +73,22 @@ body {
        1px 1px 0 #000;
 }
 
-#notDevoured ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-}
-
-#notDevoured li {
+.list {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 10px;
     color: #FCEC04;
     text-shadow: 0px 0px 8px #000000;
 }
 
-#devourBurger {
-    margin-left: 20px;
+.devoured {
+    margin-right: 20px;
+    margin-bottom: 5px;
     cursor: pointer;
     background: #FA1F19;
     color: #fff;
     border-color: #000;
 }
 
-#devourBurger:hover {
+.devoured:hover {
     background: #FCEC04;
     color: #000;
 }
