@@ -141,6 +141,8 @@ body {
 
 #burgerName {
     margin-bottom: 20px;
+    color: #FCEC04;
+    text-shadow: 0px 0px 8px #000000;
 }
 
 #burgerButton {
